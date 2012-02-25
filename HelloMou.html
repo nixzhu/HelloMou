@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    margin: 10px 13px 10px 13px;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 768px) {
+    body {
+        width: 748px;
+        margin:10px auto;
+    }
+}
+</style>
+<title>Markdown &ndash;Mou</title>
+</head>
+<body>
+<h1>Markdown &ndash;Mou</h1>
+
+<p><img src="http://mouapp.com/Mou_128.png" alt="Mou 图标" /></p>
+
+<h2>概览</h2>
+
+<p><strong>Mou</strong>，<strong>Web开发者</strong>缺失的Markdown编辑器</p>
+
+<h3>语法</h3>
+
+<h5>加重和强调</h5>
+
+<p><strong>加重</strong> or <strong>加重</strong> (Cmd + B)</p>
+
+<p><em>强调</em> or <em>强调</em> (Cmd + I)</p>
+
+<p><strong>有时候，我想让很多文字变成粗体。
+真的，很<em>多</em>文字</strong></p>
+
+<h4>引用</h4>
+
+<blockquote><p>右尖括号 &gt; 用于引用。</p></blockquote>
+
+<h4>链接和Email地址</h4>
+
+<p>一个Email地址 <a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#x7a;&#104;&#117;&#x68;&#111;&#x6e;&#103;&#120;&#117;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#122;&#104;&#117;&#104;&#111;&#110;&#x67;&#x78;&#117;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#109;</a> 链接。</p>
+
+<p>简单的行内链接 <a href="http://twitter.com/nixzhu">http://twitter.com/nixzhu</a>，另一个行内链接<a href="http://www.apple.com.cn">苹果中国</a>，再来另一个有标题的行内链接<a href="http://www.ubuntu.com" title="Linux for human beings">Ubuntu</a>。</p>
+
+<p>一个<a href="http://mouapp.com" title="Mac OS X上的Markdown编辑器">引用样式</a>，输入ID，在文档的任何地方，定义一个到对应ID的链接：</p>
+
+<p>明显，链接上的标题（或者说工具贴士）是可选的。</p>
+
+<h4>图片</h4>
+
+<p>一个行内图片<img src="http://smallerapp.com/favicon.ico" title="我是标题" alt="Smaller图标" />，标题同意可选。</p>
+
+<p>一个 <img src="http://resizesafari.com/favicon.ico" title="Title" alt="Resize icon" /> 引用样式的图片.</p>
+
+<h4>行内代码和区块代码</h4>
+
+<p>行内码由反<code>引号</code>包围。要创建区块码：</p>
+
+<pre><code>每行缩进至少一个Tab或者4个空格。
+var Mou = 真是我想要的那个应用
+</code></pre>
+
+<h4>有序列表</h4>
+
+<p>有序列表的创建使用 &ldquo;1.&rdquo; 和一个空格：</p>
+
+<ol>
+<li>有序列表项目</li>
+<li>有序列表项目</li>
+<li>有序列表项目</li>
+</ol>
+
+
+<h4>无序列表</h4>
+
+<p>无序列表的创建使用 &ldquo;*&rdquo; 和一个空格：</p>
+
+<ul>
+<li>I love Ubuntu</li>
+<li>I love Apple</li>
+<li>I love Mou</li>
+</ul>
+
+
+<p>或者使用 &ldquo;-"和一个空格：</p>
+
+<ul>
+<li>你喜欢Ubuntu吗？</li>
+<li>你喜欢Apple吗？</li>
+<li>你喜欢Mou吗？</li>
+</ul>
+
+
+<h4>强制换行</h4>
+
+<p>每行以两个或者多个空格结束会创建一个强制换行，在HTML里叫做 <code>&lt;br \&gt;</code>。（Control + 回车）<br/>
+上一行以两个空格结束。</p>
+
+<h4>水平线</h4>
+
+<p>三个或更多星号或短横线：</p>
+
+<hr />
+
+<hr />
+
+<hr />
+
+<h5>标题</h5>
+
+<p>Setext风格：</p>
+
+<h1>这是H1</h1>
+
+<h2>这是H2</h2>
+
+<p>atx风格：</p>
+
+<h1>这是H1</h1>
+
+<h2>这是H2</h2>
+
+<h3>这是H3</h3>
+
+<h4>这是H4</h4>
+
+<h5>这是H5</h5>
+
+<h6>这是H6</h6>
+
+<h3>额外的语法</h3>
+
+<h5>删除线</h5>
+
+<p>由两个波浪线包含：
+<del>GFW 方滨兴</del></p>
+
+<h4>围栏代码块</h4>
+
+<p>开始与一个包含三个或更多反引号的行，结束于同样数目的反引号行：</p>
+
+<pre><code>围栏代码块更像是是标准Markdown的正规代码块，
+但它们不是用缩进
+而是用开始和结束围栏来划分代码块。
+</code></pre>
+
+<h4>表格</h4>
+
+<p>一个简单的表格看起来如下：</p>
+
+<table>
+<thead>
+<tr>
+<th>第一个头部 </th>
+<th> 第二个头部 </th>
+<th> 第三个头部</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容格子 </td>
+<td> 内容格子 </td>
+<td> 内容格子</td>
+</tr>
+<tr>
+<td>内容格子 </td>
+<td> 内容格子 </td>
+<td> 内容格子</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>如果你喜欢，你可以给表格的每行都添加引导和结尾分割线：</p>
+
+<table>
+<thead>
+<tr>
+<th>第一个头部 </th>
+<th> 第二个头部 </th>
+<th> 第三个头部</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容格子  </td>
+<td> 内容格子   </td>
+<td> 内容格子 </td>
+</tr>
+<tr>
+<td>内容格子  </td>
+<td> 内容格子   </td>
+<td> 内容格子 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>每列的对齐可以通过在分割线上添加冒号来实现：</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">第一个头部 </th>
+<th align="center"> 第二个头部 </th>
+<th align="right"> 第三个头部</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">左对齐 </td>
+<td align="center"> 居中 </td>
+<td align="right"> 右对齐</td>
+</tr>
+<tr>
+<td align="left">左对齐 </td>
+<td align="center"> 居中 </td>
+<td align="right"> 右对齐</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3>快捷键</h3>
+
+<h4>查看</h4>
+
+<ul>
+<li>切换实时预览: Shift + Cmd + I</li>
+<li>左/右 = 1/1: Cmd + 0</li>
+<li>左/右 = 3/1: Cmd + +</li>
+<li>左/右 = 1/3: Cmd + -</li>
+<li>切换写作方向: Cmd + L</li>
+<li>全屏切换: Control + Cmd + F</li>
+</ul>
+
+
+<h4>动作</h4>
+
+<ul>
+<li>拷贝HTML: Option + Cmd + C</li>
+<li>加重: 选择文字, Cmd + B</li>
+<li>强调: 选择文字, Cmd + I</li>
+<li>行内代码: Select text, Cmd + K</li>
+<li>删除线: Select text, Cmd + U</li>
+<li>列表: Select lines, Control + L</li>
+<li>链接: Select text, Control + Shift + L</li>
+<li>图片: Select text, Control + Shift + I</li>
+<li>转成大写: Select text, Control + U</li>
+<li>转成小写: Select text, Control + Shift + U</li>
+<li>首字母大写: Select text, Control + Option + U</li>
+<li>空格转Tab: Control + [</li>
+<li>Tab转空格: Control + ]</li>
+<li>选择单词: Control + Option + W</li>
+<li>选择行: Shift + Cmd + L</li>
+<li>选择所有: Cmd + A</li>
+<li>全不选: Cmd + D</li>
+<li>插入实体 &lt;: Control + Shift + ,</li>
+<li>插入实体y >: Control + Shift + .</li>
+<li>插入实体 &amp;: Control + Shift + 7</li>
+<li>插入实体 Space: Control + Shift + Space</li>
+<li>行左移: Select lines, Cmd + [</li>
+<li>行右移: Select lines, Cmd + ]</li>
+<li>新行: Cmd + Return</li>
+<li>注释: Cmd + /</li>
+<li>强制换行: Control + Return</li>
+</ul>
+
+
+<h4>编辑</h4>
+
+<ul>
+<li>自动补全当前单词: Esc</li>
+<li>查找: Cmd + F</li>
+<li>关闭查找工具栏: Esc</li>
+</ul>
+
+
+<h4>导出</h4>
+
+<ul>
+<li>导出为 HTML: Option + Cmd + E</li>
+<li>导出为 PDF:  Option + Cmd + P</li>
+</ul>
+
+
+<h3>更多？</h3>
+
+<p>别忘了检查偏好设置，那有许多有用的选项。你可以关闭/使能新文档的<strong>显示实时预览</strong>，关闭/使能<strong>自动配对</strong>，<strong>在编辑器里使链接可点击</strong>，改变<strong>基本字体</strong>，选择另一种<strong>主题</strong>或创建你自己的主题。</p>
+
+<p>在Twitter <a href="http://twitter.com/chenluois">@chenluois</a> 上关注我获取最新的消息。</p>
+
+<p>若有反馈，请用菜单<code>Help</code>-<code>Send Feedback</code></p>
+</body>
+</html>
